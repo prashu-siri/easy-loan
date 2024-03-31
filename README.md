@@ -1,6 +1,6 @@
 # Preview Website
 
-https://easy-loan-delta.vercel.app/Contact
+https://easy-loan-delta.vercel.app
 
 # Getting Started with Create React App
 
