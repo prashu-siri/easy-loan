@@ -150,34 +150,35 @@
 }
 
 .info {
-  margin: 5em auto;
-  width: 50%;
-  text-align: center;
+  display: grid;
+  place-items: center;
+  padding-top: 2em;
 }
 
 .info h2 {
   font-size: 2em;
   position: relative;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 .info h2::after {
   content: '';
   position: absolute;
-  width: 300px;
+  width: 100%;
   height: 3px;
   background: #0F4332;
   border-radius: 5px;
-  left: 215px;
+  left: 0;
   top: 60px;
 }
 
 .card-wrapper {
   display: flex;
   gap: 5em;
-  margin: 5em;
+  margin-inline: 5em;
   justify-content: space-between;
-  padding: 2em;
+  padding-inline: 2em;
+  padding-block: 3em;
 }
 
 .card-wrapper h3 {
@@ -571,7 +572,7 @@ nav ul li a.active::after {
 
 /*******Testimonial*******/
 .testimonials {
-  background: black;
+  background: var(--text-clr);
 }
 .testimonial-wrapper {
   background: #F2F5F8;
