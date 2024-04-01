@@ -1,9 +1,9 @@
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
-import { Link } from "react-router-dom";
-import { FaStar } from "react-icons/fa";
 import testimonials from '../../data/testimonials';
 import Testimonial from "../testimonial/Testimonial";
+import blogs from '../../data/blogs';
+import Blog from "../blog/blog";
 
 const Home = () => {
 
@@ -56,39 +56,12 @@ enough to deliver the pertinent information.</p>
             <h2>Latest News</h2>
           </section>
           <section className="card-wrapper">
-            <div>
-              <div>
-                <img src="https://preview.colorlib.com/theme/easylo/assets/img/gallery/blog1.jpg" alt="blog1" />
-              </div>
-              <p className="date">21 March 2024</p>
-              <div>
-                <Link to="/" className="blog-title"><h3>What are my options and the cost to exercise?</h3></Link>
-                <p className="desc">Tools such as a profit and tax calculator show the value of your stock options and exercise cost.</p>
-              </div>
-            </div>
-            <div>
-              <div>
-                <img src="https://preview.colorlib.com/theme/easylo/assets/img/gallery/blog2.jpg" alt="blog2" />
-              </div>
-              <p className="date">20 March 2024</p>
-              <div>
-                <Link to="/" className="blog-title"><h3>Should I exercise now or later? How can I afford it?</h3></Link>
-                <p className="desc">Tools such as a profit and tax calculator show the value of your stock options and exercise cost.</p>
-              </div>
-            </div>
-            <div>
-              <div>
-                <img src="https://preview.colorlib.com/theme/easylo/assets/img/gallery/blog3.jpg" alt="blog3" />
-              </div>
-              <p className="date">19 March 2024</p>
-              <div>
-                <Link to="/" className="blog-title"><h3>I own my shares - can I get liquidity now without selling?</h3></Link>
-                <p className="desc">Tools such as a profit and tax calculator show the value of your stock options and exercise cost.</p>
-              </div>
-            </div>
+            {blogs.map((blog) => (
+              <Blog key={blog.id} {...blog} />
+            ))}
           </section>
         </div>
-        <div className="testimonials">
+        <div className="testimonials">    
           <section className="card-wrapper">
             {testimonials.map((item) => (
               <Testimonial key={item.id} {...item} />
