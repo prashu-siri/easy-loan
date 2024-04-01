@@ -1,6 +1,9 @@
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import { FaStar } from "react-icons/fa";
+import testimonials from '../../data/testimonials';
+import Testimonial from "../testimonial/Testimonial";
 
 const Home = () => {
 
@@ -83,6 +86,14 @@ enough to deliver the pertinent information.</p>
                 <p className="desc">Tools such as a profit and tax calculator show the value of your stock options and exercise cost.</p>
               </div>
             </div>
+          </section>
+        </div>
+        <div className="testimonials">
+          <section className="card-wrapper">
+            {testimonials.map((item) => (
+              <Testimonial key={item.id} {...item} />
+            ))}
+            
           </section>
         </div>
       </div>
