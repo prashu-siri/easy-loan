@@ -609,8 +609,11 @@ nav ul li a.active::after {
 }
 
 @media (max-width: 500px) {
+  .wrapper{
+    margin: 3em;
+  }
   .testimonial-wrapper {
-    width: 100%;
+    width: 85%;
   }
 
   .testimonial-message {
@@ -627,21 +630,55 @@ nav ul li a.active::after {
   .info {
     padding-inline: 2em;
     padding-block: 1em;
+
+    h2 {
+      margin: 0;
+    }
   }
 
   .card-wrapper {
     flex-direction: column;
     margin: 1em;
     padding: 1em;
-    gap: 0;
+    gap: 1em;
   }
 
   .container {
     background: none;
     padding: 2em 1em;
+    text-align: center;
+
     h1 {
       color: var(--text-clr);
       text-align: center;
+      position: initial;
+
+      &::after{
+        display: none;
+      }
+    }
+
+    p {
+      color: var(--text-clr);
+    }
+
+    button {
+      background-color: var(--bg-primary);
+    }
+  }
+
+  .info h2::after {
+    display: none;
+  }
+
+  .image-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+    img {
+      max-width: 100%;
     }
   }
 

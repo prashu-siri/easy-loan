@@ -27,7 +27,9 @@ enough to deliver the pertinent information.</p>
         </section>
         <section className="card-wrapper">
           <div>
-            <div><img src="https://preview.colorlib.com/theme/easylo/assets/img/icon/services1.svg" alt="home" /></div>
+            <div>
+              <img src="https://preview.colorlib.com/theme/easylo/assets/img/icon/services1.svg" alt="home" />
+            </div>
             <p>Home Loan</p>
             <div>
               <h3>What are my options and the cost to exercise?</h3>

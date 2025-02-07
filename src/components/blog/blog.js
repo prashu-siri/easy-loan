@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Blog = ({imgUrl, heading, summary, date}) => {
   return ( 
     <div>
-      <div>
+      <div className="image-wrapper">
         <img src={imgUrl} alt="blog1" />
       </div>
       <p className="date">{date}</p>
