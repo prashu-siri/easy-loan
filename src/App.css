@@ -616,5 +616,68 @@ nav ul li a.active::after {
   .testimonial-message {
     text-align: center;
   }
+
+  .section-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 2em;
+  }
+
+  .info {
+    padding-inline: 2em;
+    padding-block: 1em;
+  }
+
+  .card-wrapper {
+    flex-direction: column;
+    margin: 1em;
+    padding: 1em;
+    gap: 0;
+  }
+
+  .container {
+    background: none;
+    padding: 2em 1em;
+    h1 {
+      color: var(--text-clr);
+      text-align: center;
+    }
+  }
+
+  .service-wrapper{
+    margin: 1em;
+    padding: 1em;
+    gap: 1em;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    text-align: center;
+
+    .logo-wrapper, .desc {
+      display: none;
+    }
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em;
+    margin: 1em;
+  }
+
+  .form-group-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
 }
-  
+
+@media(max-width: 1024px) {
+  .service-wrapper {
+    grid-template-columns: 1fr;
+  }
+}

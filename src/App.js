@@ -7,10 +7,12 @@ import Home from './components/home/Home';
 import ApplyLoan from './components/ApplyLoan';
 import Footer from './components/Footer/Footer';
 import Contact from './components/contact/Contact';
+import SessionTimeout from './service/SessionTimeout';
 
 function App() {
   return (
     <div>
+      <SessionTimeout />
       <Nav />
       <Routes>
         <Route path='' element={<Home />} ></Route>
