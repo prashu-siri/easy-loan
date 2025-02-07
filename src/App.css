@@ -608,7 +608,41 @@ nav ul li a.active::after {
   margin: 0;
 }
 
+.mobile-nav {
+  display: none;
+}
+
 @media (max-width: 500px) {
+  .nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+
+    svg {
+      color: white;
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .mobile-menu {
+    position: fixed;
+    inset: 0;
+    background: black;
+    z-index: 1;
+
+    ul {
+      flex-direction: column;
+      margin-top: 2em;
+    }
+
+    .close-icon {
+      padding: 2em;
+    }
+  }
+
   .wrapper{
     margin: 3em;
   }
