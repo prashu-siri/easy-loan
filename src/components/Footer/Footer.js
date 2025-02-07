@@ -7,7 +7,7 @@ import { IoSend } from "react-icons/io5";
 const Footer = () => {
   return ( 
     <div className="footer">
-      <div>
+      <div className="footer-item-logo">
         <div className="logo-wrapper">
           <p className='logo'>EL</p>
           <p className='logo-ab'>EasyLoan</p>
@@ -15,7 +15,7 @@ const Footer = () => {
         <p className="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias 
           repudiandae voluptatibus cupiditate rerum, maxime deleniti?</p>
       </div>
-      <div>
+      <div className="footer-item-links">
         <p className="footer__item-header">Quick Links</p>
         <ul className="footer__list">
           <li><a href="/">Work</a></li>
@@ -24,7 +24,7 @@ const Footer = () => {
           <li><a href="/">Tips & Tricks</a></li>
         </ul>  
       </div>
-      <div>
+      <div className="footer-item-services">
         <p className="footer__item-header">Services</p>
         <ul className="footer__list">
           <li><a href="/">Home Loan</a></li>
@@ -32,7 +32,7 @@ const Footer = () => {
           <li><a href="/">Personal Loan</a></li>
         </ul>  
       </div>
-      <div>
+      <div className="footer-item-newsLetter">
         <p className="footer__item-header">NewsLetter</p>
         <p>Subscribe to our newsletter</p>
         <div className="subscribe">

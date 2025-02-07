@@ -723,13 +723,29 @@ nav ul li a.active::after {
   }
 
   .footer {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     padding: 2em;
     text-align: center;
 
     .logo-wrapper, .desc {
       display: none;
+    }
+
+    .footer-item-logo {
+      display: none;
+    }
+
+    .footer-item-links {
+      grid-column: 1/2;
+    }
+
+    .footer-item-services {
+      grid-column: 2/3;
+    }
+
+    .footer-item-newsLetter {
+      grid-column: 1/3;
     }
   }
 
