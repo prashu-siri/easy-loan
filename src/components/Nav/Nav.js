@@ -34,7 +34,7 @@ const Nav = () => {
                         <li><NavLink to="about" onClick={() => openNav()}>About</NavLink></li>
                         <li><NavLink to="services" onClick={() => openNav()}>Services</NavLink></li>
                         <li><NavLink to="Contact" onClick={() => openNav()}>Contact</NavLink></li>
-                        <li><button className='nav-btn' onClick={() => navigate('apply-loan')}>Apply for loan</button></li>
+                        <li><button className='nav-btn' onClick={() => {navigate('apply-loan'); openNav();}}>Apply for loan</button></li>
                     </ul> 
                     </div> 
                 } 
